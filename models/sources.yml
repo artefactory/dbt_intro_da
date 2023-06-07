@@ -1,0 +1,6 @@
+version: 2
+
+sources:
+  - name: dbt_intro
+    tables:
+      - name: ferrero_sales_per_week_dirty
