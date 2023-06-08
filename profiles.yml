@@ -1,0 +1,11 @@
+
+dbt_intro_da:
+  target: dev_local
+  outputs:
+    dev_local:
+      type: bigquery
+      method: oauth
+      project: formation-sql-316408
+      dataset: dbt_intro_da_{name}
+      location: EU
+      threads: 4
