@@ -26,13 +26,9 @@ the [owerview](models/overview.md)
 
 ### Clone the repo and setup python and dbt
 
-- setup a python venv `python -m venv venv`
 - install python packages `pip install -r requirements.txt`
 
-### add a file ~/.dbt/profiles.yml
-
-The type fal is setup here to run python models with the dbt-fal package
-Change the example with your name in `dbt_dev_name`
+### Change the {name} in profiles.yml
 
 ```
 dbt_intro_da:
