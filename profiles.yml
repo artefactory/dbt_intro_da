@@ -6,6 +6,6 @@ dbt_intro_da:
       type: bigquery
       method: oauth
       project: formation-sql-316408
-      dataset: dbt_intro_da_{name}
+      dataset: dbt_intro_da_jamila
       location: EU
       threads: 4
