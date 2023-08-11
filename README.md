@@ -1,8 +1,8 @@
 ## dbt project
 
-This porject we are using dbt for the transformation pipeline.
+This project we are using dbt for the transformation pipeline.
 For a more detail description of the pipeline you can look at the docs generate by dbt or directly by reading
-the [owerview](models/overview.md)
+the [overview](models/overview.md)
 
 
 ### Resources:
@@ -10,7 +10,7 @@ the [owerview](models/overview.md)
 - Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
 - Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
 - Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt developments and best practices
 
 
 ## SETUP:
