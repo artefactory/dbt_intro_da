@@ -1,0 +1,45 @@
+version: 2
+models:
+  - name : aggregation
+    description : This view contains the sales recorded from both the Group data base and the French local data base for comparision and data gap identification purposes.
+    columns:
+      - name: CATEGORY
+        quote: true
+        tests:
+          - not_null
+          - unique
+          - dbt_expectations.expect_column_values_to_be_of_type:
+                column_type: VARCHAR(16777216)
+      
+      - name: SUB_CATEGORY
+        quote: true
+        tests:
+          - not_null
+          - unique
+          - dbt_expectations.expect_column_values_to_be_of_type:
+                column_type: VARCHAR(16777216)
+      
+      - name: GRP_REVENUE
+        quote: true
+        tests:
+          - not_null
+          - unique
+          - dbt_expectations.expect_column_values_to_be_of_type:
+                column_type: INT
+      
+      - name: LOCAL_REVENUE
+        quote: true
+        tests:
+          - not_null
+          - unique
+          - dbt_expectations.expect_column_values_to_be_of_type:
+                column_type: INT
+      
+      - name: DIFFERENCE
+        quote: true
+        tests:
+          - not_null
+          - unique
+          - dbt_expectations.expect_column_values_to_be_of_type:
+                column_type: INT
+
