@@ -1,3 +1,5 @@
+dbt.duckdb
+
 #
 .user.yml
 dbt_packages

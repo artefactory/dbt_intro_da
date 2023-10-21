@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: dbt_intro
+    meta:
+      external_location: "data/{name}.csv"
+    tables:
+      - name: crf_hyp_sales_fr_data
+      - name: crf_sup_sales_fr_data
+      - name: crf_prx_sales_fr_data
+      - name: crf_sales_group_data

@@ -1,11 +1,14 @@
 
 dbt_intro_da:
-  target: dev_local
+  target: dev_duckdb
   outputs:
-    dev_local:
+    dev_duckdb:
+      path: dbt.duckdb
+      type: duckdb
+    dev_bq:
       type: bigquery
       method: oauth
       project: formation-sql-316408
-      dataset: dbt_intro_da_yourname
+      dataset: dbt_intro_da_name
       location: EU
       threads: 4
