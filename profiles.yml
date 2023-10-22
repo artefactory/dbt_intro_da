@@ -3,6 +3,7 @@ dbt_intro_da:
   target: dev_duckdb
   outputs:
     dev_duckdb:
+      schema: dbt_intro_da_name
       path: dbt.duckdb
       type: duckdb
     dev_bq:
