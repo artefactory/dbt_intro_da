@@ -14,7 +14,7 @@
 - Change directory in the repository folder: `cd dbt_intro_da`
 - Setup a python environment: `python -m venv .venv`
 - Activate python environment:
-    - Macos: `source .venv/bin/activate`
+    - MacOs: `source .venv/bin/activate`
     - Windows: `.\.env\Scripts\activate`
 - Install python packages `pip install -r requirements.txt`
 
