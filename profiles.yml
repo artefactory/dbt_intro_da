@@ -1,7 +1,7 @@
 dbt_intro_da:
   target: dev_duckdb
   outputs:
-    duckdb:
+    dev_duckdb:
       path: dbt.duckdb
       type: duckdb
       threads: 4
