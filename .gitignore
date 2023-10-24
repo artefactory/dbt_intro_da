@@ -4,7 +4,6 @@ dbt.duckdb
 .user.yml
 dbt_packages
 logs
-profiles.yml
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

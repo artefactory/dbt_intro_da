@@ -1,11 +1,11 @@
-
 dbt_intro_da:
   target: dev_duckdb
   outputs:
-    dev_duckdb:
+    duckdb:
       path: dbt.duckdb
       type: duckdb
-    dev_bq:
+      threads: 4
+    dev_bigquery:
       type: bigquery
       method: oauth
       project: formation-sql-316408
