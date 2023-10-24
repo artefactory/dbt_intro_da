@@ -67,5 +67,8 @@ https://www.googleapis.com/auth/iam.test
 - `dbt run`
 - `dbt docs generate` and` dbt docs serve` to get the project documentation
 
+### Checking the database
 
+- duckdb: `duckdb dbt.duckdb -s "select * from local_sales;"`
+- bigquery: check on bigquery
 
