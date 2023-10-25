@@ -44,7 +44,7 @@
 - Activate python environment:
     - MacOs: `source .venv/bin/activate`
     - Windows:
-      - `.\.env\Scripts\activate`
+      - `. .\.env\Scripts\activate`
       - `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force`
 - Install python packages `pip install -r requirements.txt`
 
