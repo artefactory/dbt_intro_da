@@ -5,6 +5,8 @@
 
 - [Download and install Python](https://www.python.org/downloads/)
 - [Download and install Git](https://git-scm.com/downloads)
+- [Download and install Nodejs](https://nodejs.org/en/download)
+- [Download and install VScode](https://code.visualstudio.com/download)
 - For windows: [Download and install windows terminal](https://learn.microsoft.com/en-us/windows/terminal/install)
 
 ### Get the code and install python environment
@@ -40,12 +42,12 @@
                   python -m venv .venv
       
               You can proceed with the next steps.
-  </details>     
+        </details>     
 - Activate python environment:
     - MacOs: `source .venv/bin/activate`
     - Windows:
+      - `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser`
       - `. .\.env\Scripts\activate`
-      - `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force`
 - Install python packages `pip install -r requirements.txt`
 
 <details>
@@ -97,8 +99,4 @@ https://www.googleapis.com/auth/iam.test
 - `dbt run`
 - `dbt docs generate` and` dbt docs serve` to get the project documentation
 
-### Checking the database
-
-- duckdb: `duckdb dbt.duckdb -s "select * from local_sales;"`
-- bigquery: check on bigquery
 
