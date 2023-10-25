@@ -78,5 +78,5 @@ To observe and monitor the new table and view we are creating with dbt we can us
 - Install the extension: https://marketplace.visualstudio.com/items?itemName=Evidence.sqltools-duckdb-driver
 - Setup the connection with the duckdb database file:
     - In VScode after the extension installation
-    - ![Alt text](./assets/setup_vscode_sqltool_duckdb/01_add_database_connection.png "Title")
+    - ![01](./assets/setup_vscode_sqltool_duckdb/01_add_database_connection.png) ![02](./assets/setup_vscode_sqltool_duckdb/02_fill_connection_infos.png)
 
