@@ -90,4 +90,7 @@ To observe and monitor the new tables and views we are creating with dbt we can 
         - ![02](./assets/setup_vscode_sqltool_duckdb/05_view_local_sales_in_db.png)
     - You should then see a VScode window with the following. From it you can explore, sort and filter data.
         - ![02](./assets/setup_vscode_sqltool_duckdb/06_results_view_local_sales_in_db.png)
+    - You can also run custom query to explore de data present in the database:
+        - ![02](./assets/setup_vscode_sqltool_duckdb/07_custom_query.png)
+
 
