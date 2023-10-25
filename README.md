@@ -31,6 +31,14 @@
                   python: aliased to /usr/bin/python3
 
               if you have python3.
+              Rechange directory in the repository folder:
+
+                  cd dbt_intro_da
+
+              And setup your python environment with
+  
+                  python -m venv .venv
+      
               You can proceed with the next steps.
   </details>     
 - Activate python environment:
