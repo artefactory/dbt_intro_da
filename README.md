@@ -13,6 +13,26 @@
 - Clone the repository: `git clone https://github.com/artefactory/dbt_intro_da.git`
 - Change directory in the repository folder: `cd dbt_intro_da`
 - Setup a python environment: `python -m venv .venv`
+        - <details>
+              <summary> in case of error `zsh: command not found: python` </summary>     
+
+              Providing you know Python is already installed on you device,
+              run this command in Terminal / your C.L.I. (Command Line Interface)
+
+                  echo "alias python=/usr/bin/python3" >> ~/.zshrc
+
+              Then, fully restart your C.L.I.
+              and run:
+  
+                  which python
+
+              The result should be
+  
+                  python: aliased to /usr/bin/python3
+
+              if you have python3.
+              You can proceed with the next steps.
+  </details>     
 - Activate python environment:
     - MacOs: `source .venv/bin/activate`
     - Windows:
