@@ -74,14 +74,20 @@ This file will contains all the tables views we are creating.
 
 ### Connection to the database with VScode:
 
-To observe and monitor the new table and view we are creating with dbt we can use VScode and some extensions to explore our database:
+To observe and monitor the new tables and views we are creating with dbt we can use VScode and some extensions to explore our database:
 - Install the extension: https://marketplace.visualstudio.com/items?itemName=Evidence.sqltools-duckdb-driver
+- During and after the installation the extension it will probably ask you to confirm the installation of some tools.
 - Setup the connection with the duckdb database file:
-    - In VScode after the extension installation
-    - ![01](./assets/setup_vscode_sqltool_duckdb/01_add_database_connection.png)
-    - ![02](./assets/setup_vscode_sqltool_duckdb/02_fill_connection_infos.png)
-    - ![02](./assets/setup_vscode_sqltool_duckdb/03_select_db_file.png)
-    - ![02](./assets/setup_vscode_sqltool_duckdb/04_connect_to_db.png)
-    - ![02](./assets/setup_vscode_sqltool_duckdb/05_view_local_sales_in_db.png)
-    - ![02](./assets/setup_vscode_sqltool_duckdb/06_results_view_local_sales_in_db.png)
+    - In the sqltool extension menu click on add connection: 
+        - ![01](./assets/setup_vscode_sqltool_duckdb/01_add_database_connection.png)
+    - Fill info in connection settings, you can keep the connection name to DuckDB or give it a more meaningfull name.
+        - ![02](./assets/setup_vscode_sqltool_duckdb/02_fill_connection_infos.png)
+    - You should find a file named `dbt.duckdb` in the folder of `dbt_intro_da` if the command `dbt run` finished without errors.
+        - ![02](./assets/setup_vscode_sqltool_duckdb/03_select_db_file.png)
+    - Confirm the connection with `CONNECT NOW`
+        - ![02](./assets/setup_vscode_sqltool_duckdb/04_connect_to_db.png)
+    - Browse the database, in `main/view` you should find `local_sales`. You can then click on the magnifier icon to show `local_sales` data
+        - ![02](./assets/setup_vscode_sqltool_duckdb/05_view_local_sales_in_db.png)
+    - You should then see a VScode window with the following. From it you can explore, sort and filter data.
+        - ![02](./assets/setup_vscode_sqltool_duckdb/06_results_view_local_sales_in_db.png)
 
