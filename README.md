@@ -13,7 +13,7 @@
 - Clone the repository: `git clone https://github.com/artefactory/dbt_intro_da.git`
 - Change directory in the repository folder: `cd dbt_intro_da`
 - Setup a python environment: `python -m venv .venv`
-        - <details>
+         <details>
               <summary> in case of error `zsh: command not found: python` </summary>     
 
               Providing you know Python is already installed on you device,
