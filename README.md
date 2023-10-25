@@ -15,7 +15,9 @@
 - Setup a python environment: `python -m venv .venv`
 - Activate python environment:
     - MacOs: `source .venv/bin/activate`
-    - Windows: `.\.env\Scripts\activate`
+    - Windows:
+      - `.\.env\Scripts\activate`
+      - `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force`
 - Install python packages `pip install -r requirements.txt`
 
 <details>
