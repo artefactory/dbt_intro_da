@@ -67,10 +67,16 @@ https://www.googleapis.com/auth/iam.test
 
 - `dbt debug` should now tell you everything is OK
 - `dbt deps` to install dbt packages used in this project
-
-### Using dbt
-
 - `dbt run`
-- `dbt docs generate` and` dbt docs serve` to get the project documentation
 
+The first `dbt run` should create a file named `dbt.duckdb`.
+This file will contains all the tables views we are creating.
+
+### Connection to the database with VScode:
+
+To observe and monitor the new table and view we are creating with dbt we can use VScode and some extensions to explore our database:
+- Install the extension: https://marketplace.visualstudio.com/items?itemName=Evidence.sqltools-duckdb-driver
+- Setup the connection with the duckdb database file:
+    - In VScode after the extension installation
+    - ![Alt text](./assets/setup_vscode_sqltool_duckdb/01_add_database_connection.png "Title")
 
