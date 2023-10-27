@@ -72,25 +72,22 @@ https://www.googleapis.com/auth/iam.test
 The first `dbt run` should create a file named `dbt.duckdb`.
 This file will contains all the tables views we are creating.
 
-### Connection to the database with VScode:
+<details>
+  <summary>VScode extension (optionnal but nice to have)</summary>
 
-To observe and monitor the new tables and views we are creating with dbt we can use VScode and some extensions to explore our database:
-- Install the extension: https://marketplace.visualstudio.com/items?itemName=Evidence.sqltools-duckdb-driver
-- During and after the installation the extension it will probably ask you to confirm the installation of some tools.
-- Setup the connection with the duckdb database file:
-    - In the sqltool extension menu click on add connection: 
-        - ![01](./assets/setup_vscode_sqltool_duckdb/01_add_database_connection.png)
-    - Fill info in connection settings, you can keep the connection name to DuckDB or give it a more meaningfull name.
-        - ![02](./assets/setup_vscode_sqltool_duckdb/02_fill_connection_infos.png)
-    - You should find a file named `dbt.duckdb` in the folder of `dbt_intro_da` if the command `dbt run` finished without errors.
-        - ![02](./assets/setup_vscode_sqltool_duckdb/03_select_db_file.png)
-    - Confirm the connection with `CONNECT NOW`
-        - ![02](./assets/setup_vscode_sqltool_duckdb/04_connect_to_db.png)
-    - Browse the database, in `main/view` you should find `local_sales`. You can then click on the magnifier icon to show `local_sales` data
-        - ![02](./assets/setup_vscode_sqltool_duckdb/05_view_local_sales_in_db.png)
-    - You should then see a VScode window with the following. From it you can explore, sort and filter data.
-        - ![02](./assets/setup_vscode_sqltool_duckdb/06_results_view_local_sales_in_db.png)
-    - You can also run custom query to explore de data present in the database:
-        - ![02](./assets/setup_vscode_sqltool_duckdb/07_custom_query.png)
+### VScode extension (optionnal but nice to have):
 
+To help us navigate the dbt project we are using the extension dbt power user:
+- Install the extension: https://marketplace.visualstudio.com/items?itemName=innoverio.vscode-dbt-power-user
 
+There is one setting that should be added
+- Go in settings
+    - ![](./assets/vs_code_extensions/dbt_power_user/01_open_settings.png)
+- Add `*.sql` in the field *Item* and `jinja-sql` in the *Value*
+    - ![](./assets/vs_code_extensions/dbt_power_user/02_add_in_settings.png)
+- Clicks on *run dbt SQL*
+    - ![](./assets/vs_code_extensions/dbt_power_user/03_query_model.png)
+- View lineage
+    - ![](./assets/vs_code_extensions/dbt_power_user/04_view_lineage.png)
+
+</details>
