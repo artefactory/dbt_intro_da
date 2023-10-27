@@ -117,7 +117,7 @@ should output something like:
 | ALCOOLS              | GIN-VODKA-TEQUILA | f_f_6023176352753 | f_f_8429768983288 | 2023-06-20 | 22.36 |
 | VQPRD ROUGES/HORS... | VINS DU SUD OUEST | f_f_2550597061567 | f_f_8429768983288 | 2023-05-22 | 34.23 |
 ```
-Which are a couple of rows from the tables define by the dbt model `local_sales`
+Which are a couple of rows from the table defined by the dbt model `local_sales`
 
 We can also run arbitrary queries:
 ```
