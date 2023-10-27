@@ -91,3 +91,53 @@ There is one setting that should be added
     - ![](./assets/vs_code_extensions/dbt_power_user/04_view_lineage.png)
 
 </details>
+
+### dbt show
+
+To look explore what is inside the database we can use the `dbt show` command: https://docs.getdbt.com/reference/commands/show
+
+For example the command:
+```
+dbt show -s local_sales
+```
+should output something like:
+```
+13:58:16  Running with dbt=1.6.6
+13:58:17  Registered adapter: duckdb=1.6.1
+13:58:17  Found 1 model, 4 sources, 0 exposures, 0 metrics, 351 macros, 0 groups, 0 semantic models
+13:58:17  
+13:58:17  Concurrency: 4 threads (target='dev_duckdb')
+13:58:17  
+13:58:17  Previewing node 'local_sales':
+| product_category     | pdt_SUB_CATEGORY  | barcode_ean13     | site_key          |       DATE |    CA |
+| -------------------- | ----------------- | ----------------- | ----------------- | ---------- | ----- |
+| APERITIFS            | SANS ALCOOL       | f_f_0327607249893 | f_f_8429768983288 | 2023-03-08 | 37.57 |
+| VQPRD ROUGES/HORS... | VINS DU SUD OUEST | f_f_4371089866174 | f_f_8429768983288 | 2023-10-15 | 11.79 |
+| ALCOOLS              | PUNCHS            | f_f_2239755478262 | f_f_8429768983288 | 2023-08-13 | 31.95 |
+| ALCOOLS              | GIN-VODKA-TEQUILA | f_f_6023176352753 | f_f_8429768983288 | 2023-06-20 | 22.36 |
+| VQPRD ROUGES/HORS... | VINS DU SUD OUEST | f_f_2550597061567 | f_f_8429768983288 | 2023-05-22 | 34.23 |
+```
+Which are a couple of rows from the tables define by the dbt model `local_sales`
+
+We can also run arbitrary queries:
+```
+dbt show --inline "select distinct(product_category) from {{ ref('local_sales') }}"
+```
+should output something like:
+```
+13:58:20  Running with dbt=1.6.6
+13:58:20  Registered adapter: duckdb=1.6.1
+13:58:20  Found 1 model, 4 sources, 0 exposures, 0 metrics, 351 macros, 0 groups, 0 semantic models
+13:58:20  
+13:58:20  Concurrency: 4 threads (target='dev_duckdb')
+13:58:20  
+13:58:20  Previewing inline node:
+| product_category     |
+| -------------------- |
+| ALCOOLS              |
+| APERITIFS            |
+| VQPRD BORDEAUX RO... |
+| EAUX AROMATISEES     |
+| VINS DE TABLES/PAYS  |
+```
+
