@@ -83,7 +83,7 @@ To help us navigate the dbt project we are using the extension dbt power user:
 There is one setting that should be added
 - Go in settings
     - ![](./assets/vs_code_extensions/dbt_power_user/01_open_settings.png)
-- Add `*.sql` in the field *Item* and `jinja-sql` in the *Value*
+- Search for `files:assoc` and add `*.sql` in the field *Item* and `jinja-sql` in the *Value*
     - ![](./assets/vs_code_extensions/dbt_power_user/02_add_in_settings.png)
 - Clicks on *run dbt SQL*
     - ![](./assets/vs_code_extensions/dbt_power_user/03_query_model.png)
