@@ -3,7 +3,7 @@
 
 ### Requirements
 
-- [Download and install Python](https://www.python.org/downloads/)
+- [Download and install Python 3.11.x](https://www.python.org/downloads/release/python-3116/)
 - [Download and install Git](https://git-scm.com/downloads)
 - [Download and install Nodejs](https://nodejs.org/en/download)
 - [Download and install VScode](https://code.visualstudio.com/download)
