@@ -20,7 +20,7 @@
     - MacOs: `source venv/bin/activate`
     - Windows:
       - `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser`
-      - `. .\.env\Scripts\activate`
+      - `. .\env\Scripts\activate`
 - Install python packages `pip install -r requirements.txt`
 
 <details>
