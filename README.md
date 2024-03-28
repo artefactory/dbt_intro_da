@@ -14,10 +14,10 @@
 - Clone the repository: `git clone https://github.com/artefactory/dbt_intro_da.git`
 - Change directory in the repository folder: `cd dbt_intro_da`
 - Setup a python environment: 
-    - MacOs: `python3 -m venv .venv`
-    - Windows: `python -m venv .venv`
+    - MacOs: `python3 -m venv venv`
+    - Windows: `python -m venv venv`
 - Activate python environment:
-    - MacOs: `source .venv/bin/activate`
+    - MacOs: `source venv/bin/activate`
     - Windows:
       - `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser`
       - `. .\.env\Scripts\activate`
