@@ -5,7 +5,6 @@
 
 - [Download and install Python 3.11.x](https://www.python.org/downloads/release/python-3116/)
 - [Download and install Git](https://git-scm.com/downloads)
-- [Download and install Nodejs](https://nodejs.org/en/download)
 - [Download and install VScode](https://code.visualstudio.com/download)
 - For windows: [Download and install windows terminal](https://learn.microsoft.com/en-us/windows/terminal/install)
 
