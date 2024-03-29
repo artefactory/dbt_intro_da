@@ -13,6 +13,7 @@
 - Open a terminal
 - Clone the repository: `git clone https://github.com/artefactory/dbt_intro_da.git`
 - Change directory in the repository folder: `cd dbt_intro_da`
+- If you have conda installed you will need to deactivate it: `conda deactivate`
 - Setup a python environment: 
     - MacOs: `python3 -m venv venv`
     - Windows: `python -m venv venv`
